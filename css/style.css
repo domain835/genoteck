@@ -1,0 +1,304 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  background-color: #f4f4f6;
+  font-family: ALSStory, Tahoma;
+  line-height: 1.5;
+}
+
+.post {
+  background-color: #fff;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 0 20px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__inner .activity, .header__inner .available {
+  margin-left: 15px;
+}
+
+.header__inner .user-logo .logo__link {
+  letter-spacing: 1.5px;
+  color: #6d7278;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.header__inner .activity {
+  color: #6d7278;
+  font-size: 14px;
+}
+
+.header__inner .available {
+  color: #8a7c5d;
+}
+
+.header__inner .available__icon {
+  font-size: 18px;
+}
+
+.header__inner .available__text {
+  color: #8a7c5d;
+  font-size: 14px;
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .header__inner .available__text {
+    display: inline;
+  }
+}
+
+.container {
+  padding: 0 15px;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 45px;
+  }
+}
+
+.content .head__title {
+  font-size: 30px;
+  line-height: 1.27;
+  font-weight: normal;
+}
+
+.content .head__text {
+  padding: 15px 0;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+.content .head__image {
+  background-image: url("../images/bg-head-3x.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 220px;
+}
+
+@media (min-width: 768px) {
+  .content .head__image {
+    min-height: 450px;
+  }
+}
+
+.content .scroll {
+  background-color: #142536;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: solid 1px #405265;
+}
+
+.content .scroll:hover {
+  background-color: #22374b;
+}
+
+.content .scroll__title {
+  padding: 15px 58px 15px 0;
+  font-size: 22px;
+  line-height: 1.27;
+  font-weight: normal;
+  position: relative;
+  width: 100%;
+}
+
+.content .scroll__title .arrow {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  font-size: 16px;
+  -webkit-transform: translateY(-50%) rotate(0deg);
+          transform: translateY(-50%) rotate(0deg);
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
+}
+
+@media (min-width: 1024px) {
+  .content .scroll__title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.content .scroll .scroll-content {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 0 30px;
+  border-top: solid 1px #405265;
+}
+
+.content .scroll .scroll-content__text {
+  line-height: 24px;
+}
+
+.content .scroll .scroll-content__text p {
+  margin-bottom: 10px;
+}
+
+.content .scroll .scroll-content__text__link {
+  color: #5a88c1;
+}
+
+.content .scroll .scroll-content .instruction-image {
+  width: 250px;
+  height: auto;
+  padding-top: 30px;
+}
+
+.content .scroll .scroll-content form {
+  max-width: 425px;
+}
+
+.content .scroll .scroll-content form .text-input-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.content .scroll .scroll-content form .text-input-wrapper input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #5c738b;
+  width: 100%;
+  outline: none;
+  height: 30px;
+  color: #fff;
+}
+
+.content .scroll .scroll-content form .text-input-wrapper input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.content .scroll .scroll-content form .text-input-wrapper input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.content .scroll .scroll-content form .text-input-wrapper input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.content .scroll .scroll-content form .text-input-wrapper input::placeholder {
+  color: #fff;
+}
+
+.content .scroll .scroll-content form .text-input-wrapper input::hover {
+  border-bottom: 1px solid #fff;
+}
+
+.content .scroll .scroll-content form .text-input-wrapper .fa {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  color: #5c738b;
+  outline: none;
+}
+
+.content .scroll .scroll-content form button {
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  color: #fff;
+  padding: 15px 20px;
+  width: 100%;
+  margin-top: 44px;
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .content .scroll .scroll-content form button {
+    width: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content .scroll .scroll-content form {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    max-width: 280px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content .scroll .scroll-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding-top: 30px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: relative;
+  }
+  .content .scroll .scroll-content__text {
+    width: 693px;
+  }
+  .content .scroll .scroll-content .instruction-image {
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.content .scroll.active .arrow {
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+}
+
+.content .scroll.active .scroll-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 1024px) {
+  .content .scroll:last-child .scroll-content {
+    padding-bottom: 90px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
